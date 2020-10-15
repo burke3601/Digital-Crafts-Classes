@@ -24,7 +24,8 @@ while i_username != "will123" or i_password != "easy123" and count<3:
 
 # I need to figure out the counter 
 
-
+username = "will123"
+password = "easy123"
 
 
 
