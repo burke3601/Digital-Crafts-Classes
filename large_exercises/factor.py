@@ -1,11 +1,21 @@
 
 num=int(input("enter a number \n"))
-factors=[]
-for i in range(1,num+1):
-    if num%i==0:
-       factors.append(i)
+factors = []
+for x in range(1,num+1):
+    if num % x == 0:
+       factors.append(x)
 
 print ("Factors of {} = {}".format(num,factors))
+
+
+
+
+
+
+
+
+
+
 
 
 

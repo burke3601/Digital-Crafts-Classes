@@ -1,10 +1,10 @@
 
-n = 1
+x = 1
 
 max = 100
 
-while (n <= max):
-    print(int(n * (n+1)/2))
-    n += 1
+while (x <= max):
+    print(int(x * (x+1)/2))
+    x += 1
 
 #first 100 triangle numbers
