@@ -5,14 +5,12 @@
  ##   print("You are old enough")
 #else:
   #  print("You are not old enough.")
+num = 5
+guess = int(input("Pick a number 1 - 10?\n"))
 
-num = int(input("Pick a number 1 - 10?\n"))
-
-if num > 5:
-    print("that is too high")
-elif num < 5:
-    print("that is too low")
-elif num == 5:
-    print("that is correct")
+while guess != num:
+    print("incorrect guess, try again.\n")
+    guess = int(input("Pick a number 1 - 10?\n"))
+print("congrats!")
 
     

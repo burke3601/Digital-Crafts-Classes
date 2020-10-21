@@ -1,13 +1,13 @@
 #1
-# grocery_list = [
-# ['Corn','Potatoes','Tomatoes'],
-# ['milk','eggs','cheese','yogurt'],
-# ['frozen pizza','popsicle']
-# ]
+grocery_list = [
+['Corn','Potatoes','Tomatoes'],
+['milk','eggs','cheese','yogurt'],
+['frozen pizza','popsicle']
+]
 
-# for item in grocery_list:
-#     print("veggies", "dairy", "frizen")
-#     print (item)
+for item in grocery_list:
+    print("veggies", "dairy", "frizen")
+    print (item)
 
 #2
 #try this with 

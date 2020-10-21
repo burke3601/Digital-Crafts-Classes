@@ -10,8 +10,12 @@ print("List 2:" + str(list2))
 
 
 mult_list = [] 
+i = 0
 for i in range(0, len(list1)): 
     mult_list.append(list1[i] * list2[i]) 
 
 print(mult_list)
 
+
+
+while i < len(list1)

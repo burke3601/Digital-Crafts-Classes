@@ -1,15 +1,26 @@
-height = input("How tall is the triangle?\n")
-height = int(height)
+base = 13
 stars = 1
-counter = height -1
-space = ' '*counter
+while stars <= base:
+    blanks = int((base-stars)/2)
+    print(" "*blanks+"*"*stars+" "*blanks)
+    stars = stars+2
 
-while height > 0:
-    print(space, '*'+stars)
-    counter -= 1
-    space = ' '*counter
-    height -= 1
-    stars +=2
+
+
+
+
+# height = input("How tall is the triangle?\n")
+# height = int(height)
+# stars = 1
+# counter = height -1
+# space = int(' '* counter)
+
+# while height > 0:
+#     print(space, '*'+stars)
+#     counter -= 1
+#     space = int(" " *counter)
+#     height -= 1
+#     stars +=2
 
 
 
