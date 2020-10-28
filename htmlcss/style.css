@@ -1,0 +1,17 @@
+h1 {
+font-size: 40px;
+font-weight: 200;
+}
+
+div {
+    text-decoration: seagreen;
+    
+}
+
+#main-content {
+    color:purple
+}
+
+.nav-link {
+    text-decoration: underline;
+}
