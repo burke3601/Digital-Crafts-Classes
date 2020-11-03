@@ -1,19 +1,41 @@
 //Number 1
-function test(numberOne, numberTwo, numberThree){
-    return numberOne + numberTwo + numberThree
+// function test(numberOne, numberTwo, numberThree){
+//     return numberOne + numberTwo + numberThree
     
-}
-test(1,2,3);
-//works in browser, not vscode for some reason
+// }
+// let answer = test(1, 2, 3)
+// console.log(answer)
+
+// const myFunc = function(a,b,c){
+//     return(a+b+c)
+
+// }
+// let res = myFunc('I', 'am', 'cool')
+// console.log(res)
 
 
+console.log('************************')
 //Number 2 
-function firstFunction(secondFunction, num){
-    console.log('Test Test Test')
-    secondFunction()
+const nextFunc = function(subFunc, aNumber){
+    for (let i = 0; i <= aNumber; i++) {
+        console.log(i)
+    }
+    subFunc()
 }
 
+nextFunc(function(){
+    console.log('Yee haw')
+}, 20)
 
+nextFunc(function(){
+    console.log('Hubba Hubba')
+}, 2)
+
+
+const anotherFunc = function(){
+    console.log('I am here')
+}
+nextFunc(anotherFunc, 12)
 
 
 
