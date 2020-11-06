@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+          background: red;
+          font-size: 24px;
+          width: 100px;
+          height: 100px;
+          margin: 25px;
+        }
+      </style>
+        <p class="box"></p>
+        <p class="box"></p>
+        <p class="box"></p>
+        <p class="box"></p>
+        <p class="box"></p>
+    <button id="myButton">Click Me!</button>
+      <script>
+          document.addEventListener('click', event => {
+    if(event.target.classList.contains('box')){
+      event.target.style.backgroundColor = 'grey'
+      event.target.innerText = 'Changed'
+    }
+
+  })
+       const button = document.querySelector('#myButton')
+        function clickOnce(){
+            alert('click')
+        button.removeEventListener('click', clickOnce)
+    }
+        button.addEventListener('click', clickOnce)
+    
+    window.addEventListener('resize', function(){
+    console.log(window.innerWidth);
+  })
+      </script>
+</body>
+</html>

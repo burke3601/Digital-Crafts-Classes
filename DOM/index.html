@@ -1,25 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burke Webpage</title>
-    
-</head>
-<body>
-    <h1>Test title</h1>
-    
-       <ul>
-           <li>Item 1</li>
-           <li>Item 2</li>
-           <li>Item 3</li>
-       </ul>
+  </html>
+      <head> 
+          <title>Test Selectors</title>
+          <style>
+              .hidden {
+                  display:none;
+              }
+              .title{
+                  font-weight: bold;
+              }
+              .btn {
+                  text-align:center;
+                  padding:10px 20px;
+                  border-radius:16px;
+                  font-weight:bold;
+                  border:1px solid #eeffee;
+                  background:#eeffee;
+              }
 
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia eius sunt tempore, rem, recusandae saepe qui deleniti quisquam, necessitatibus labore itaque dolores! Nostrum ducimus, distinctio harum repellat molestias dolorum.</p>
-       
-    </div>
-    
+              .primary {
+                  background:#6bc4ff;        
+              }
 
-    <script src="script.js"></script>
-</body>
-</html>
+              .highlighted {
+                  background:#ddd;
+                  padding:10px;
+              }
+          </style>
+      </head>
+      <body>
+         <h1>Here is my title</h1>
+          <main>
+              <button class="more-info"> This is my button</button>
+              <div id="main-idea" class="highlighted">
+                  Some Main idea
+                  <span id="more-info">More Info</span>
+                  <div>
+                   
+                  </div>
+              </div>
+              <p class="child-idea">
+                  Child Idea 1
+              </p>
+              <p class="child-idea">
+                  Child Idea 2
+              </p>
+              <p class="child-idea">
+                  Child Idea 3
+              </p>
+              
+              
+            </main>
+          <footer >This is my footer.</footer>
+      <script src="script.js"></script>
+      </body>
+  </html>
