@@ -1,6 +1,6 @@
 #Given an array nums, write a function to move all zeroes to the end of it while maintaining the relative order of the non-zero elements.
 
-# nums=[0,1,2,3,4]
+nums=[0,1,2,3,4]
 # print(testarray)
 
 # def pushZerosToEnd(arr, n): 
@@ -42,7 +42,6 @@
 #   return count
 
 # print(list_count_7([7704793]))
-
 
 
 
