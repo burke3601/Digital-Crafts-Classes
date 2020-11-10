@@ -69,3 +69,36 @@ let names = ["will", "kamber", "buster"]
 // newFunc();
 names.forEach((name, idx) =>console.log(name, idx+1))
 
+
+
+
+
+//PM redos
+
+//ex1
+
+
+
+let Func1 = (f)=>{
+    return(f * f)
+}
+console.log(Func1(8))
+
+//ex2
+
+let func2 = (g,h)=>{
+    return(g + h)
+}
+console.log(func2(3,4))
+
+//ex3
+
+let names1 = ["bob", "joe", "steve"]
+
+
+names1.forEach((name1, idx)=> console.log(name1, idx +1))
+
+let namesNew =['o','r','t']
+
+tester = namesNew.forEach((namesNew2, idx)=>console.log(namesNew2, idx +1))
+
