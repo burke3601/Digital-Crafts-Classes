@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI API Tester Page</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class ="test1">
+    <label for="test1"> Username</label>
+    <input id="test1" 
+    class="special" 
+    name="username" 
+    placeholder="type your username here" 
+    value="" 
+    type="text"
+    />
+
+    </div>
+    
+    <label for="agree">
+        <input type="checkbox" 
+        id="agree" 
+        name="agree"
+        value="I Agree"
+        checked
+        >
+        Agree To terms?
+
+
+    </label>
+    <!-- <div class="radio">
+        <label for="cars"> Cars 
+            <input  value="cars" name="transport" type="radio">
+        </label>
+        <label for="trains"> Trains 
+            <input value="trains"  name="transport" type="radio">
+        </label>
+        <label for = "planes"> Planes 
+            <input checked value="planes" name="transport" type="radio">
+        </label>
+    </div> -->
+  
+    <div class="radio">
+        <label for="cats"> Cats
+            <input  name="animals" id="cats" type="radio" value="cats">
+        </label>
+        <label for="dogs"> Dogs
+            <input name="animals" id="dogs" type="radio" value="dogs">
+        </label>
+        <label for="bears"> Bears
+            <input  name="animals" id="bears" type="radio" value="bears">
+        </label>
+
+
+    </div>
+
+    <div>
+    <label for="favorite-food">Favorite Food</label>
+    <select name="favorite-food" id="favorite-food">
+        <option value=""> Please Select a Food</option>
+    <optgroup label ="italian">
+        <option value="pizza">Pizza (Ninja Turtles)</option>
+        <option value="mushrooms">Shrooms (Mario)</option>
+    </optgroup>
+    <optgroup label = "dessert">
+        <option value="doughnut"> Doughnuts (Homer)</option>
+    </optgroup>
+    </select>
+    </div>
+
+    <div>
+        <label>This is my range</label>
+        <input type="range" name="volumn" min="0" max="10" step="1" value="2">
+    </div id ="rangeValue">
+
+    <div>
+        <label for="description">Condition Description</label>
+  <textarea id="description" name="description" placeholder="Describe your medical condition"></textarea>
+    </div>
+    <div>
+        <input type="color" id="text-color" name="text-color" value="#e66465">
+    </div>
+    
+ <script>src ="myScript.js"</script>
+</body>
+</html>
+
+<!-- lessons 1,2,3,4,5 -->

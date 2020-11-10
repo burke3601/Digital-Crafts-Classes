@@ -1,0 +1,38 @@
+ .radio{
+display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+ }
+
+.radio:hover input ~ .checkmark {
+background-color: rgb(180, 24, 24);
+}
+.radio input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+.radio .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.test1{
+    display: inline-block;
+    padding-top: 35px;
+    font-weight: bold;
+}

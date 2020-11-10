@@ -28,16 +28,16 @@
 // console.log(name)
 
 //Exercise 1
+let myArray = [1,2,3,4]
+let [a,b,c,d] = myArray
 
-// let [a,b,c,d] = [1,2,3,4]
+console.log(b)
 
-// console.log(b)
-
-let [,second,,] = [1,2,3,4]
+let [,second,,] = myArray
 
 console.log(second)
 
-let[first, ...rest] = [1,2,3,4]
+let[first, ...rest] = myArray
 console.log(first)
 
 //Exercise 2
@@ -62,3 +62,13 @@ console.log(acceleration)
 
 const {age, speed} = ship
 console.log(age, speed)
+
+// const ship_speed = {speed}
+// console.log(ship_speed)
+// const ship_age = {age}
+// console.log(ship_age, ship_speed)
+
+let {age: ship_age, speed: ship_speed} = ship //how to do it in one line
+console.log(ship_age, ship_speed)
+console.log(ship)
+
