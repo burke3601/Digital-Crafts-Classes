@@ -107,7 +107,7 @@ let updated =[{
 
 bigArray = [...cars, ...updated]
 
-
+console.log("****new cars***")
 let newnew = [...bigArray.filter(y=>y.year >= 2018)]
 console.log(newnew)
 console.log(cars)
@@ -123,11 +123,9 @@ let bigArray1 =[{
 addFocus = [...bigArray1, ...bigArray]
 console.log(addFocus)
 
-function compare(a,b){
-    const
-}
 
-dateSort = [cars.sort(d=>d.year)]
+
+dateSort = [cars.filter(d=>d.year)]
 console.log(dateSort)
 
 console.log('***************')
