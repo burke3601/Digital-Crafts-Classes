@@ -12,23 +12,23 @@ const ajax = (url, callback, method='GET')=>{
     request.send()
 }
 
-ajax("test2.txt", (r)=>{
-    let li = document.createElement("li")
-    document.body.append(li)
-    li.append(r)
-})
+// ajax("test2.txt", (r)=>{
+//     let li = document.createElement("li")
+//     document.body.append(li)
+//     li.append(r)
+// })
 
-ajax("test3.txt", (r)=>{
-    let li = document.createElement("li")
-    document.body.append(li)
-    li.append(r)
-})
+// ajax("test3.txt", (r)=>{
+//     let li = document.createElement("li")
+//     document.body.append(li)
+//     li.append(r)
+// })
 
-ajax("test4.txt", (r)=>{
-    let li = document.createElement("li")
-    document.body.append(li)
-    li.append(r)
-})
+// ajax("test4.txt", (r)=>{
+//     let li = document.createElement("li")
+//     document.body.append(li)
+//     li.append(r)
+// })
 
 
 
@@ -36,7 +36,7 @@ ajax("test4.txt", (r)=>{
 //     let ul = document.querySelector("ul")
 //     let li = document.querySelector("il")
 //     li.append(r)
-//     ul.append(li)
+//     ul.append(li) 
 // }
 
 // ajax("test2.txt", callback)
