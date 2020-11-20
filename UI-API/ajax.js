@@ -1,4 +1,4 @@
-const ajax = (url, callback, method='GET')=>{
+export const ajax = (url, callback, method='GET')=>{
     if(!url) return console.error("Request Required")
     if(!callback) return console.error("Callback Required")
     const request = new XMLHttpRequest();
