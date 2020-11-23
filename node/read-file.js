@@ -20,3 +20,4 @@ fs.readFile("data.json", 'utf8', (err, data)=>{
     let tester = JSON.parse(data)
     tester.forEach((value) => console.log(`${value.name} is ${value.age} years old!`))
 })
+
