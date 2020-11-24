@@ -1,6 +1,9 @@
 const http = require("http");
-const fs = require("fs")
+const fs = require("fs");
+const { builtinModules } = require("module");
 const port = 6566
+const serveFavicon = require("./modules/serveFavicon")
+const generateContent = require("./modules/generateContent")
 
 const navigation = `
     <nav>
@@ -9,46 +12,6 @@ const navigation = `
         <span><a href="?page=about">About</a></span>
     </nav>
 `
-const makeHeading = (page) =>{
-    let heading
-    switch(page){
-        case "about":
-            heading = `<h1>This is about!</h1>`;
-            break;
-        case "contact":
-            heading = `<h1>This is contact</h1>`;
-            break;
-        case "foo":
-            heading = "<h1>I Pitty THE foo</h1>"
-            break;
-        default:
-            heading = `<h1>This is Home</h1>`;
-    }
-    return heading
-}
-let generateContent = ({page, navigation, heading, additional,count})=>{
-    return  `
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <title>My Selection:${page}</title>
-                
-                <link rel="stylesheet" href="styles.css" type="text/css"/>
-            </head>
-            <body>
-                ${navigation}
-                ${heading}
-                The count is ${count || 0}. I hope you are happy.
-                <ul>
-                    ${additional.join("")}
-                </ul>
-                <footer>
-                    copyleft 2020
-                </footer>
-            </body>
-        </html>
-    `
-}
 const serveCSS = (req,res) =>{
     fs.readFile("./styles.css", (err,data)=>{
         if(err){
@@ -56,7 +19,7 @@ const serveCSS = (req,res) =>{
             res.end()
         }
         res.writeHead(200, {
-            "Content.Type":"text/css"
+            "Content.type":"text/css"
         })
         
         res.end(data)
@@ -64,16 +27,7 @@ const serveCSS = (req,res) =>{
 }
 //need to call the function
 
-const serveFavicon = ((req,res)=>{
-    fs.readFile("favicon.ico", (err, data)=>{
-        if(err){
-            res.writeHead(404)
-            res.end()
-        }
-        res.write(data)
-        res.end(data)
-    })
-})
+
 const server = http.createServer((req,res)=>{
     
     console.log(req.url)
@@ -91,15 +45,15 @@ const server = http.createServer((req,res)=>{
     url.searchParams.forEach((value,name) =>{
         additional.push(`<li>${name}:${value}</li>`)
     })
-    let heading = makeHeading(page)
-    let foo = "Yo are awesome Clint!"
+    // let heading = makeHeading(page)
+    // let foo = "Yo are awesome Clint!"
     let wrapper =  generateContent({
         page,
         navigation, 
-        heading, 
+        
         count, 
         additional,
-        foo
+        
     })  
     res.write(wrapper)
     res.end()
