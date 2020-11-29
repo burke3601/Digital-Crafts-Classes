@@ -2,8 +2,8 @@ const http = require("http");
 const fs = require("fs");
 const { builtinModules } = require("module");
 const port = 6566
-const serveFavicon = require("./modules/serveFavicon")
-const generateContent = require("./modules/generateContent")
+const serveFavicon = require("../modules/serveFavicon")
+const generateContent = require("../modules/generateContent")
 
 const navigation = `
     <nav>
