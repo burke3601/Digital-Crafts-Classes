@@ -42,7 +42,7 @@ app.get("/contact", (req,res)=>{
     res.send(serveContent("contact", "2813308004"))
 })
 app.get("/about", (req,res)=>{
-    res.send(serveContent("About", "well well well"))
+    res.send(serveContent("About", "well well"))
 })
 app.get("/favicon.ico", sendFavicon)
 app.get("*", send404)

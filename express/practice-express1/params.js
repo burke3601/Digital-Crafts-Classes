@@ -25,12 +25,16 @@ app.get("/api/people/email/:email", (req, res)=>{
     res.send(results)
 })
 
-app.get("/api/people/:search", (req, res)=>{
-    const{search} = req.params;
-    let results = people.filter(person=> {
-        return JSON.stringify(person).includes(search)
-    })
-})
+// app.get("/api/people/email", (req, res) =>{
+//     res.send = people.map(person=person.email)
+// })
+
+// app.get("/api/people/:search", (req, res)=>{
+//     const{search} = req.params;
+//     let results = people.filter(person=> {
+//         return JSON.stringify(person).includes(search)
+//     })
+// })
 
 const server = http.createServer(app)
 
