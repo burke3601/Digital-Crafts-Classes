@@ -2,6 +2,10 @@ const http = require("http")
 const express = require("express");
 const app = express();
 const port = 4432
+//logger for IP adress
+const morgan = require('morgan');
+const logger = morgan('tiny');
+app.use(logger);
 
 const sendHome = (req,res)=>{
     res.send(`<h1> content at the time ${res.content}`)
@@ -14,6 +18,27 @@ const timeLogger = (req,res, next)=>{
     console.log(requestTime)
     next()
 }
+//magic ID
+const setMagicId = (req,res, next)=>{
+    req.magicId = Math.floor((Math.random() * 100))
+    console.log(req.magicId)
+    next()
+}
+
+app.use(setMagicId)
+
+app.get("/", (req,res)=>{
+    res.send(`
+        You are at root and your magicId is:
+        ${req.magicId}
+    `)
+});
+
+app.get("/api", (req,res)=>{
+    console.log(`
+        You are at api but you have a magic id of : ${req.magicId}
+    `)
+})
 
 app.get("/",timeLogger, sendHome)
 
