@@ -1,0 +1,22 @@
+# Running list of topics
+
+- [X] Q&A
+- [x] confirming node installation
+    - macOS
+    - windows 10
+- [ ] LP
+    - [ ] confirm access
+    - [ ] connect demos to specific section of LP
+- [ ] JS "reboot"
+    - [X] arrow functions
+    - [X] array iteration (forEach, filter)
+    - [ ] Working with Objects
+    - [ ] Arrays of Objects
+- [ ] node!
+    - [X] `require()` and `module.exports`
+    - [ ] install a module from the internet
+    - [ ] built-in `http` module
+- [X] (optional) breakout room
+    - [X] for working solo
+- [X] for DIR Friday
+    - fetch()
